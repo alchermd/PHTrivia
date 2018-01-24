@@ -22,6 +22,7 @@
             android:text="Please enter your name:" />
 
         <EditText
+            android:id="@+id/player_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name" />
@@ -49,6 +50,7 @@
             android:orientation="vertical">
 
             <RadioButton
+                android:id="@+id/q1_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Juan Luna" />
@@ -79,6 +81,7 @@
             android:text="Cory Aquino's favorite color is: " />
 
         <EditText
+            android:id="@+id/q2_answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Answer" />
@@ -107,6 +110,7 @@
                 android:text="Coca Cola" />
 
             <RadioButton
+                android:id="@+id/q3_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pepsi" />
@@ -134,6 +138,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/q4_answer"
             android:hint="Answer" />
         <!-- End of Q4 -->
 
@@ -160,6 +165,7 @@
                 android:text="Luzon" />
 
             <RadioButton
+                android:id="@+id/q5_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Visayas" />
@@ -190,6 +196,7 @@
             android:orientation="vertical">
 
             <RadioButton
+                android:id="@+id/q6_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="True" />
@@ -220,6 +227,7 @@
             android:orientation="vertical">
 
             <RadioButton
+                android:id="@+id/q7_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sulu Sea" />
@@ -255,6 +263,7 @@
             android:orientation="vertical">
 
             <RadioButton
+                android:id="@+id/q8_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="True" />
@@ -295,6 +304,7 @@
                 android:text="Diosdado Macapagal" />
 
             <RadioButton
+                android:id="@+id/q9_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ramon Magsaysay" />
@@ -315,30 +325,36 @@
             android:text="In the 1970s, a 22.6-foot reticulated python terrorized Luzon. Which of the following events happened?" />
 
         <CheckBox
+            android:id="@+id/q10_correct_answer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="The research was headed by Thomas N. Headland" />
 
         <CheckBox
+            android:id="@+id/q10_wrong_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="The python eats the Philippine eagle." />
 
         <CheckBox
+            android:id="@+id/q10_correct_answer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="15 men and 1 women were attacked by the snake." />
 
         <CheckBox
+            android:id="@+id/q10_correct_answer3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="One negrito was eaten by the snake, and was found after the Python was butchered." />
         <!-- End of Q10 -->
 
         <Button
+            android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="submit" />
+            android:text="submit"
+            android:onClick="sumbitQuiz"/>
 
     </LinearLayout>
 </ScrollView>
