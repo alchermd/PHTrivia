@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.CheckBox;
+import android.widget.EditText;
 
 /**
  * This activity launches the PHTrivia quiz app.
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view - the calling View.
      */
     public void sumbitQuiz(View view) {
-        String name = getName();
+        String name = fetchName();
         int score = calculateScore();
 
         Toast toast = Toast.makeText(this, name, Toast.LENGTH_SHORT);
@@ -30,17 +33,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * // TODO: implement this method.
      * Fetches the user's name.
+     *
      * @return the user's name.
      */
     private String fetchName() {
-        return "Alcher";
+        EditText playerName = (EditText) findViewById(R.id.player_name);
+        if (playerName.getText().toString().equals("")) {
+            return "Anonymous";
+        }
+
+        return playerName.getText().toString();
     }
 
     /**
      * // TODO: implement this method.
      * Calculates the total score based on how the user did on the quiz.
+     *
      * @return the total score.
      */
     private int calculateScore() {
