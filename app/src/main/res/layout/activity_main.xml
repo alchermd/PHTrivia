@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     tools:context="me.johnalcher.phtrivia.MainActivity">
 
     <LinearLayout
@@ -12,39 +13,47 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/AppTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PH Trivia" />
 
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Please enter your name:" />
 
         <EditText
             android:id="@+id/player_name"
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name" />
 
         <TextView
+            style="@style/Answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="There are 10 questions that you have to answer below. Good luck!" />
 
         <!-- Start of Q1 -->
+
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="question 1"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Which famous Filipino painter killed his wife and mother-in-law. He was later acquitted of his &quot;Crime of Passion&quot;." />
 
         <RadioGroup
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -70,18 +79,21 @@
 
         <!-- Start of Q2 -->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="question 2"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cory Aquino's favorite color is: " />
 
         <EditText
             android:id="@+id/q2_answer"
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Answer" />
@@ -89,17 +101,20 @@
 
         <!-- Start of Q3-->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="question 3"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="In 1992, a soda company offered 1 million pesos to anyone who had a bottle cap with &#8220;349&#8221; printed on it. Turns out, half a million bottle caps got the winning number. What company is this?" />
 
         <RadioGroup
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -125,36 +140,42 @@
 
         <!-- Start of Q4-->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="question 4"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Major Archibald Butt, former military captain in the Philippines, died in the sinking of Titanic. This happened in what year?" />
 
         <EditText
+            android:id="@+id/q4_answer"
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/q4_answer"
             android:hint="Answer" />
         <!-- End of Q4 -->
 
         <!-- Start of Q5-->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="question 3"
+            android:text="question 5"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jaz Cola, a beverage produced by The Coca Cola Company, was specifically made for the people in the what major island?" />
 
         <RadioGroup
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -180,17 +201,20 @@
 
         <!-- Start of Q6-->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="question 3"
+            android:text="question 6"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Aluling Bridge in Ilocos Sur took 35 years to complete." />
 
         <RadioGroup
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -211,17 +235,20 @@
 
         <!-- Start of Q7-->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="question 3"
+            android:text="question 7"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gollum suluensis is a shark named after Gollum of the movie &#8220;Lord of the Rings&#8221;. This shark is found at  " />
 
         <RadioGroup
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -247,17 +274,20 @@
 
         <!-- Start of Q8-->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="question 3"
+            android:text="question 8"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="The first same-sex marriage in the Philippines was between two NPA members." />
 
         <RadioGroup
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -278,17 +308,20 @@
 
         <!-- Start of Q9-->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="question 3"
+            android:text="question 9"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="A dog named &#8220;Serging&#8221; (alias &#8220;Avante&#8221;) received numerous awards in 1957 for his heroic act during the a plane crash that killed which former Philippine president?" />
 
         <RadioGroup
+            style="@style/Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -314,12 +347,14 @@
 
         <!-- Start of Q10-->
         <TextView
+            style="@style/SectionHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="question 3"
+            android:text="question 10"
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/Question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="In the 1970s, a 22.6-foot reticulated python terrorized Luzon. Which of the following events happened?" />
@@ -344,6 +379,7 @@
 
         <CheckBox
             android:id="@+id/q10_correct_answer3"
+            style="@style/Answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="One negrito was eaten by the snake, and was found after the Python was butchered." />
@@ -351,10 +387,11 @@
 
         <Button
             android:id="@+id/submit_button"
-            android:layout_width="wrap_content"
+            style="@style/SubmitButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="submit"
-            android:onClick="sumbitQuiz"/>
+            android:onClick="sumbitQuiz"
+            android:text="submit" />
 
     </LinearLayout>
 </ScrollView>
